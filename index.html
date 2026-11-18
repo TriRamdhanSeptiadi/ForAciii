@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Acii ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- WELCOME PAGE -->
+    <section id="welcomePage" class="welcome-container">
+
+        <div class="welcome-card">
+            <div class="cute-image">🧸</div>
+
+            <h1>Hi, Acii! ♡</h1>
+
+            <p>
+                I made something special for you.
+                <br>
+                Are you ready to see it?
+            </p>
+
+            <button id="openButton">
+                Open My Little World 💌
+            </button>
+
+            <div class="footer-text">
+                Made with love, just for you ♡
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <section id="mainPage" class="main-page hidden">
+
+        <header class="navbar">
+            <div class="logo">♡ For Acii</div>
+
+            <button id="musicButton" class="music-button">
+                🎵 Play Music
+            </button>
+        </header>
+
+        <main class="content">
+
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-decoration">🌷</div>
+
+                <span class="small-label">
+                    A LITTLE WORLD FOR YOU
+                </span>
+
+                <h1>
+                    Hello, Orang Malabar!
+                    <br>
+                    <span>Acii ♡</span>
+                </h1>
+
+                <p>
+                    Welcome to my little world.
+                    A place where every little thing
+                    reminds me of you.
+                </p>
+
+                <div class="hero-character">🐻‍❄️💗</div>
+
+                <p class="hero-bottom">
+                    I hope this little place makes you smile.
+                </p>
+            </section>
+
+
+            <!-- MENU -->
+            <section class="menu-section">
+
+                <h2>Explore My Little World ✨</h2>
+
+                <p class="section-description">
+                    There are some little surprises for you.
+                </p>
+
+                <div class="menu-grid">
+
+                    <div class="menu-card">
+                        <div class="menu-icon">💌</div>
+                        <h3>Letter</h3>
+                        <p>A little message from my heart.</p>
+                        <button onclick="showFeature('letter')">
+                            Open Letter →
+                        </button>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-icon">📸</div>
+                        <h3>Our Memories</h3>
+                        <p>Little moments, precious memories.</p>
+                        <button onclick="showFeature('memories')">
+                            See Memories →
+                        </button>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-icon">🎁</div>
+                        <h3>Surprise Box</h3>
+                        <p>Something special is waiting.</p>
+                        <button onclick="showFeature('surprise')">
+                            Open Surprise →
+                        </button>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-icon">💗</div>
+                        <h3>Daily Love</h3>
+                        <p>A little reminder for your day.</p>
+                        <button onclick="showFeature('daily')">
+                            Get Your Message →
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer>
+                <p>Made with ♡ especially for Acii</p>
+                <p>You're my favorite notification. 🌷</p>
+            </footer>
+
+        </main>
+    </section>
+
+
+    <!-- FEATURE MODAL -->
+    <div id="featureModal" class="modal hidden">
+
+        <div class="modal-card">
+
+            <button class="close-button" onclick="closeFeature()">
+                ✕
+            </button>
+
+            <div id="featureContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/lofi.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
